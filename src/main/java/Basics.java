@@ -44,6 +44,8 @@ public class Basics {
          *                Hello World!
          */
 
+        System.out.println("Hello World!");
+
 
 
         /* 4. In Python, we could declare variables using a simple assignment
@@ -63,6 +65,7 @@ public class Basics {
          *                value 100.
          */
 
+        int my_variable = 100;
 
 
         /* Do not remove the line below: if you did task 2 correctly, then
@@ -100,6 +103,9 @@ public class Basics {
          * Current count: 0
          */
 
+        for (int i = 10; i >= 0; i = i - 1) {
+            System.out.println("Current count: " + i);
+        }
 
     }
 
@@ -144,6 +150,12 @@ public class Basics {
 
         // Fill in the rest of the body here
 
+        String[] words = to_split.split(" ");
+
+        for (String word: words) {
+            ret.append(word.charAt(0));
+        }
+
         return ret.toString();
     }
 
@@ -171,9 +183,12 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
+        for (int i = 1; i < arr.length; i = i + 2) {
+            current_sum = current_sum + arr[i];
+        }
+
         return current_sum;
     }
-
 
     /*
      * TODO (Task 6): Submit the changes you made on GitHub!
@@ -185,3 +200,4 @@ public class Basics {
      *                accordingly.
      */
 }
+
